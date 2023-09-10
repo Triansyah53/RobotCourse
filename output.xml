@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230910 20:30:15.402" rpa="false" schemaversion="4">
+<suite id="s1" name="My Account" source="D:\Udemy\SQA\RobotCourse\my_account.robot">
+<test id="s1-t1" name="Login attempt with invalid user should show error" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://demostore.supersqa.com/my-account/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230910 20:30:15.549" level="INFO">Opening browser 'Chrome' to base url 'http://demostore.supersqa.com/my-account/'.</msg>
+<status status="PASS" starttime="20230910 20:30:15.549" endtime="20230910 20:30:19.656"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=menu-item-157</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230910 20:30:19.657" level="INFO">Clicking element 'id=menu-item-157'.</msg>
+<msg timestamp="20230910 20:30:19.741" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230910 20:30:19.741" level="FAIL">Element with locator 'id=menu-item-157' not found.</msg>
+<status status="FAIL" starttime="20230910 20:30:19.657" endtime="20230910 20:30:19.742"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>fakeuser</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230910 20:30:19.743" endtime="20230910 20:30:19.743"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>fakepassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230910 20:30:19.743" endtime="20230910 20:30:19.743"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#post-73 &gt; div &gt; div &gt; form &gt; p:nth-child(3) &gt; input.woocommerce-Button.button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230910 20:30:19.743" endtime="20230910 20:30:19.743"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>css=#content &gt; div &gt; div.woocommerce &gt; ul</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230910 20:30:19.743" endtime="20230910 20:30:19.743"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css=#content &gt; div &gt; div.woocommerce &gt; ul</arg>
+<arg>ERROR: Invalid username. Lost your password?</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" starttime="20230910 20:30:19.743" endtime="20230910 20:30:19.743"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230910 20:30:19.744" endtime="20230910 20:30:19.744"/>
+</kw>
+<status status="FAIL" starttime="20230910 20:30:15.548" endtime="20230910 20:30:19.744">Element with locator 'id=menu-item-157' not found.</status>
+</test>
+<status status="FAIL" starttime="20230910 20:30:15.403" endtime="20230910 20:30:19.744"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="My Account">My Account</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
